@@ -11,9 +11,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-celestial to-white/30 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">W</span>
+                <span className="text-white font-bold text-xl">SM</span>
               </div>
-              <span className="text-xl font-display font-semibold">WebDevMaster</span>
+              <span className="text-xl font-display font-semibold">SmartSkillsAcademy</span>
             </div>
             <p className="text-white/80 mb-6">
               Empowering the next generation of web developers with industry-relevant skills and hands-on experience.
