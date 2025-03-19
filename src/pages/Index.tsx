@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const Index = () => {
         <Curriculum />
         {/* <Testimonials /> */}
         <CallToAction />
+        <ContactForm />
       </main>
       <Footer />
     </div>

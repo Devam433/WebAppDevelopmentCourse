@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="pt-32 pb-24 md:pt-40 md:pb-32 px-6 md:px-10 overflow-hidden relative"
+      className="pt-32 pb-24 md:pt-40 md:pb-32 px-2 md:px-10 text-wrap  relative"
     >
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-0 w-64 h-64 bg-celestial/10 rounded-full blur-3xl -z-10"></div>
@@ -45,19 +45,35 @@ const Hero = () => {
             New course sessions starting soon
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight animate-on-scroll text-balance">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold leading-tight animate-on-scroll text-wrap">
             Master <span className="text-celestial">Web Development</span> from Fundamentals to Full Stack
           </h1>
           
-          <p className="text-lg md:text-xl text-foreground/80 animate-on-scroll max-w-xl text-balance">
+          <p className="text-lg md:text-xl text-foreground/80 animate-on-scroll max-w-xl text-wrap">
             Join our comprehensive course designed by experts to build professional, responsive web applications that stand out.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-on-scroll">
-            <Button size="lg" className="bg-celestial hover:bg-celestial/90 text-white">
+            <Button size="lg" className="bg-celestial hover:bg-celestial/90 text-white"
+            
+            onClick={() => {
+              const contactSection = document.getElementById("contactUs");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            >
               Enroll Now <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-celestial text-celestial hover:bg-celestial/10">
+            <Button size="lg" variant="outline" className="border-celestial text-celestial hover:bg-celestial/10"
+            
+            onClick={() => {
+              const contactSection = document.getElementById("curriculum");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            >
               View Curriculum
             </Button>
           </div>

@@ -15,7 +15,7 @@ const Footer = () => {
              <img src="LOGO.png" alt="Logo" className=" w-20" />
             </div>
 
-              <span className="text-xl font-display font-semibold">SmartSkillsAcademy</span>
+              <span className="text-xl font-display font-semibold">Smart Skills Academy</span>
             </div>
             <p className="text-white/80 mb-6">
               Empowering the next generation of web developers with industry-relevant skills and hands-on experience.
@@ -86,7 +86,7 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © {currentYear} WebDevMaster. All rights reserved.
+            ©{currentYear} Smart Skills Academy. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/60 hover:text-white text-sm">

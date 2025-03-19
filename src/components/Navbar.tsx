@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* <span className="text-white font-bold text-xl">SM</span> */}
             <img src="LOGO.png" alt="Logo" className=" w-20" />
           </div>
-          <span className="text-lg md:text-xl font-display font-semibold">SmartSkillsAcademy</span>
+          <span className="text-lg md:text-xl font-display font-semibold">Smart Skills Academy</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -63,9 +63,17 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button className="bg-celestial hover:bg-celestial/90 text-white">
-            Enroll Now
-          </Button>
+          <Button 
+  className="bg-celestial hover:bg-celestial/90 text-white"
+  onClick={() => {
+    const contactSection = document.getElementById("contactUs");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  Enroll Now
+</Button>
         </nav>
 
         {/* Mobile Menu Button */}
